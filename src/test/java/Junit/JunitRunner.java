@@ -12,5 +12,6 @@ public class JunitRunner {
 	public void sample(){
 
 		System.out.println("Cucumber implementation"); 
+		System.out.println("hello cucumber");
 	}
 }
