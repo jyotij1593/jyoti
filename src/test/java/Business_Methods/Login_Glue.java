@@ -70,8 +70,8 @@ public class Login_Glue extends Basesetupdriver {
 		Reports.CreateTest("Pass_data_to_Excel_of_item_Searched");
 		for (int i = 2; i<=4; i++) 
 		{
-			String Firstxpath = "//*[@id='container']/div/div[3]/div[2]/div[1]/div[2]/";
-			String Secondxpath = "div[" +i+ "]/div/div/div/a/div[3]/div[2]/div/div/div";
+			String Firstxpath = "//*[@id='container']/div/div[3]/div[2]/div[1]/div[2]";
+			String Secondxpath = "div[" +i+ "]/div/div/div/a/div[2]/div[2]/div[1]/div/div[1]";
 			
 			String finalxpath = Firstxpath+Secondxpath;
 			

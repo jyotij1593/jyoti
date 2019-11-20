@@ -6,16 +6,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Properties;
 
-import org.apache.commons.collections4.map.HashedMap;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-
-import com.codoid.products.exception.FilloException;
 
 import Utilities.Browserconfig;
 import Utilities.DataProvider;
 import Utilities.Reports;
-import cucumber.api.java.Before;
 
 public class Basesetupdriver extends Browserconfig {
 	public static Properties prop;
@@ -30,8 +25,7 @@ public class Basesetupdriver extends Browserconfig {
 	public void ReadPropertyfile_and_OpenBrowser() throws IOException, Exception {
 		
 		 prop = new Properties();
-		 BufferedReader reader = new BufferedReader(new
-		 FileReader("PropertiesList/Config.properties"));
+		 BufferedReader reader = new BufferedReader(new FileReader("PropertiesList/Config.properties"));
 		 prop.load(reader);
 		 BufferedReader reader_1 = new BufferedReader(new FileReader(prop.getProperty("roles")));
 		 prop.load(reader_1);
@@ -43,7 +37,7 @@ public class Basesetupdriver extends Browserconfig {
 		
 		driver = choosebrowser("Chrome", "https://www.flipkart.com");
 		excelHashMapValues = obj.extractExcelData(testCaseID, sheetName);
-		Reports.reportGeneration("C:\\Users\\koushicks\\Documents\\DemoFrame-master\\DemoFrame-master\\DemoFrame-master\\Attachment\\");
+		Reports.reportGeneration("C:\\Users\\jyotij\\Connect\\pull\\Hybrid-Framework\\Attachment");
 		
 	}
 

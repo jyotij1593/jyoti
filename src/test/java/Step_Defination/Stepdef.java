@@ -98,7 +98,7 @@ public class Stepdef extends Basesetupdriver {
 	public void click_on_login_button() throws Throwable {
 		
 	ob.ClickonLogin();
-	Thread.sleep(5000);
+	Thread.sleep(1000);
 	    
 	}
 
